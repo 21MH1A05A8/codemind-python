@@ -1,11 +1,12 @@
 n=input()
-s=n.casefold()
-k='abcdefghijklmnopqrstuvwxyz'
-f=0
+n=n.lower()
+k=list(n)
+e=[]
 for i in k:
-    if i not in s:
-        f+=1
-if f==0:
-    print('True')
+    if i in 'abcdefghijklmnopqrstuvwxyz':
+        if i not in e:
+            e.append(i)
+if len(e)==26:
+    print(True)
 else:
-    print('False')
+    print(False)
