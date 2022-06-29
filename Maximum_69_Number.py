@@ -1,12 +1,12 @@
 def num(n):
     a=str(n)
     if '6' in a:
-        l=list(a)
-        e=l.index('6')
-        l[e]='9'
-        g="".join(l)
+        k=list(a)
+        e=k.index('6')
+        k[e]='9'
+        g="".join(k)
         return int(g)
     else:
-        return n
+         return n
 n=int(input())
 print(num(n))
