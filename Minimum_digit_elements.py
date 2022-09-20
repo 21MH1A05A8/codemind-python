@@ -1,13 +1,11 @@
 n=int(input())
 k=list(map(int,input().split()))
-e=[]
+l=[]
 for i in k:
-    s=str(i)
-    k=len(s)
-    e.append(k)
-l=min(e)
-c=0
-for i in e:
-    if i==l:
-        c+=1
+    i=str(i)
+    s=len(i)
+    l.append(s)
+j=min(l)
+c=l.count(j)
 print(c)
+    
