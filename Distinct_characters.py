@@ -4,7 +4,7 @@ n=list(n)
 r=[]
 for i in n:
     if i!=" ":
-        if i not in r:
+        if n.count(i)==1:
             r.append(i)
 r=sorted(r)
 print("".join(r))
