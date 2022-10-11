@@ -9,6 +9,4 @@ for i in range(2,n):
 if c>0 and d==0:
     print("yes")
 else:
-    print('no')
-            
-            
+    print("no")
