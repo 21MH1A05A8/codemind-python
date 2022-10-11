@@ -1,19 +1,19 @@
 n=int(input())
-p=list(map(int,input().split()))
-v=[]
+k=list(map(int,input().split()))
 c=[]
+l=[]
 for i in range(n):
-    if p[i]%2==0:
-        c.append(p[i])
+    if k[i]%2!=0:
+        c.append(k[i])
     else:
-        v.append(p[i])
+        l.append(k[i])
 i,j=0,0
-while i<len(v) or j<len(c):
-    if i<len(v):
-        print(v[i],end=" ")
+while i<len(c) or j<len(l):
+    if i<len(c):
+        print(c[i],end=" ")
         i+=1
-    if j<len(c):
-        print(c[j],end=" ")
+    if j<len(l):
+        print(l[j],end=" ")
         j+=1
 if n%2!=0:
     print("0")
